@@ -1,5 +1,7 @@
-smartversion: parse and manipulate software version numbers, painlessly
-=========================
+smartversion 
+============
+
+Parse and manipulate version numbers, painlessly.
 
 smartversion can parse and manipulate software version numbers. It's semver-compatible, and can handle a vast variety of version formats (based on real-world data).
 
