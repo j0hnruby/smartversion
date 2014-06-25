@@ -15,15 +15,17 @@ with open('README.rst') as f:
 with open('HISTORY.rst') as f:
     history = f.read()
 
+vers = smartversion.__version__
+
 setup(
     name = 'smartversion',
-    version = smartversion.__version__,
+    version = vers,
     description = 'Easy software version parsing/manipulation',
     long_description = readme + '\n\n' + history,
     author='Jack Ruby',
     author_email='j0hnruby@vfemail.net',
     url='https://github.com/j0hnruby/smartversion',
-    download_url='',
+    download_url='https://github.com/j0hnruby/smartversion/tarball/' + vers,
     packages=['smartversion'],
     install_requires=[],
     license='MIT',
