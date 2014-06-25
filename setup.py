@@ -23,9 +23,11 @@ setup(
     author='Jack Ruby',
     author_email='j0hnruby@vfemail.net',
     url='https://github.com/j0hnruby/smartversion',
+    download_url='',
     packages=['smartversion'],
     install_requires=[],
     license='MIT',
+    keywords=['version', 'parsing', 'looseversion'],
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
