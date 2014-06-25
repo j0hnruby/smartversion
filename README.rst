@@ -26,19 +26,27 @@ Demo:
     >>> v.patch2
     1
     >>> v2 = Version.parse('linux-2.4.6-rc4')
+    >>> str(v)
+    linux-2.4.6-rc1
+    >>> str(v2)
+    linux-2.4.6-rc4
     >>> v < v2
     True
     >>> v3 = Version.parse('linux-2.4.6')
+    >>> str(v2)
+    linux-2.4.6-rc4
+    >>> str(v3)
+    linux-2.4.6
     >>> v2 < v3
     True    # yes, the release candidate comes first :o)
 
     # You can also set version parameters explicitly
-    >>> from datetime import date
-    >>> v4 = Version("Bob's Amazing Software", 1, 0)
+    >>> v4 = Version("Bob's Amazing Software", 1, 0, 1)
     >>> str(v4)
-    Bob's Amazing Software 1.0
+    Bob's Amazing Software 1.0.1
 
     # And compare versions based on age
+    >>> from datetime import date
     >>> v5 = Version("Bob's Amazing Software", 1, 2, \
                release_date=date(2009, 5, 1))
     >>> v5.is_older_than(date(2010, 1, 1)) 
