@@ -10,23 +10,23 @@ Demo:
 .. code-block:: pycon
 
     >>> from smartversion import Version 
-    >>> v1 = Version.parse('linux-2.4.6-rc1') 
-    >>> v1.name
+    >>> v = Version.parse('linux-2.4.6-rc1') 
+    >>> v.name
     linux
-    >>> v1.major
+    >>> v.major
     2
-    >>> v1.minor
+    >>> v.minor
     4
-    >>> v1.patch
+    >>> v.patch
     '6-rc1'
-    >>> v1.patch1
+    >>> v.patch1
     6
-    >>> v1.patch_str
+    >>> v.patch_str
     '-rc'
-    >>> v1.patch2
+    >>> v.patch2
     1
     >>> v2 = Version.parse('linux-2.4.6-rc4')
-    >>> v1 < v2
+    >>> v < v2
     True
     >>> v3 = Version.parse('linux-2.4.6')
     >>> v2 < v3
